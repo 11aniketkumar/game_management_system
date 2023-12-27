@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>home</title>
+    <link rel="stylesheet" href="new_event.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="images.png" alt=""></i>
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+        <img src="images.png" alt="" class="profile" />
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Home</span>
+            </div>
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_editor"></div>
+          <!-- duplicate these li tag if you want to add or remove navlink only -->
+          <!-- Start -->
+          <li class="item">
+            <a href="/new_event" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-magic-wand"></i>
+              </span>
+              <span class="navlink">Create</span>
+            </a>
+          </li>
+          <!-- End -->
+
+          <li class="item">
+            <a href="/show_event" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Events</span>
+            </a>
+          </li>
+         
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_setting"></div>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-flag"></i>
+              </span>
+              <span class="navlink">Notice</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cog"></i>
+              </span>
+              <span class="navlink">Setting</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-log-out"></i>
+              </span>
+              <span class="navlink">Log Out</span>
+            </a>
+          </li>
+
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in-circle' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-in-circle'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <!-- main -->
+      <div class="main-con">
+        <div id="page">
+          <form method="post" action="/create_event">
+              <div id="form_design">
+                  <div class="column1">
+                      <div> <label for="name">Event Heading:</label></div>
+                      <div><label for="event_type">Event Type:</label></div>
+                      <!-- <div><label for="photo">Upload Photo:</label></div> -->
+                      <div><label for="date">Date and Time:</label></div>
+                      <div><label for="scout">Scouts:</label></div>
+                      <div><label for="venue">Venue:</label></div>
+                      <div><label for="description">Details:</label></div>
+                  </div>
+                  <div class = "column2">
+                      <div><input type="text" id="heading" name="name" placeholder="Enter event heading..." required><br></div>
+                      <div>
+                          <select id="event_type" name="event_type" required>
+                              <option value="" disabled selected>Select an event type</option>
+                              <option value="Tech Event">Tech Event</option>
+                              <option value="Workshop">Workshop</option>
+                              <option value="Technical Talks">Technical Talks</option>
+                              <option value="Paper Presentation">Paper Presentation</option>
+                              <option value="Gaming">Gaming</option>
+                              <option value="Other">Other</option>
+                          </select><br>
+                      </div>
+                      <!-- <div><input type="file" id="photo" name="photo" accept="image/*" required><br></div> -->
+                      <div><input type="datetime-local" id="datetime" name="date" required><br></div>
+                      <div><input type="text" id="heading" name="scout" placeholder="Enter scout name" required><br></div>
+                      <div><input type="text" id="heading" name="venue" placeholder="Enter venue" required><br></div>
+                      <div><textarea id="details" name="description" rows="5" cols="30" placeholder="Enter event details..." maxlength="500" required></textarea><br></div>
+                  </div>
+              </div>
+                  <input class = "submit_btn" type="submit" value="Submit" name="submit">
+          </form>
+      </div>
+      </div>
+    
+    <!-- JavaScript -->
+    <script src="home.js"></script>
+  </body>
+</html>

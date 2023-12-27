@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab&family=Ubuntu&display=swap');
+
+
+body {
+    position: relative; /* Add this to create a stacking context */
+    background-color: #201c1c;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+.navbar {
+    background-color: #201c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    font-weight: 600; /* Increase font weight */
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e5e5e5;
+}
+
+/* Adding the underline on hover */
+.nav-links a:not(.sign-in-btn):hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: -3px;
+    left: 0;
+}
+
+.sign-in-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.banner{
+    height: 600px;
+    width: 100%;
+    background-color: pink;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    padding-top: 30px;
+}
+.or-head{
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 20px;
+    color: #4758d6;
+    font-family: poppins;
+}
+.organises{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.games{
+    height: 280px;
+    width: 280px;
+    columns: black; 
+    font-size: 35px;
+    font-weight: 700;
+    background-color: #4758d6;
+    margin: 50px;
+    border-radius: 10px;
+    
+}
+.games:hover{
+    opacity: 0.8;
+    height: 290px;
+    width: 290px;
+
+}
+.games img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.about{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+.content{
+    display: flex;
+}
+.theory{
+    padding-top: -14px;
+    padding-left: 15px;
+}
+.content img{
+    padding-left: 80px;
+}
+.content button{
+    height: 40px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 10px;
+
+}
+.dsa{
+    width: 100%;
+    height: 500px;
+    background-color: #201c1c;
+}
+.org-head{
+    font-size: 30px;
+    font-weight: 700;
+    top: 30px;
+}
+.cards{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #201c1c;
+    
+}
+.card{
+    height: 400px;
+    width: 300px;
+    background-color:#44cdff;
+    margin: auto;
+    border-radius: 10px;
+
+}
+.card img{
+    height: 240px;
+    width: 250px;
+    margin: 25px;
+    border-radius: 50%;
+}
+.details{
+    font-size: 30px;
+    font-weight: 600;
+}
+.post{
+    font-size: 25px;
+    font-weight: 450;
+}

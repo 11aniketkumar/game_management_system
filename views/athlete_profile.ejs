@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Info Page</title>
+    <link rel="stylesheet" href="/athlete_profile.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inline">
+            <form action="/createAccount" method="post" class="section">
+                <h2 class="info-head">Basic Info</h2>
+                <div class="content1">
+                    <div class="input-box">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter your full name" name="name" value="<%=name%>">
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter your email" name="email" value="<%=email%>">
+                    </div>
+                    <div class="input-box">
+                        <label for="phno">Phone Number</label>
+                        <input type="text" placeholder="Enter your phone number" name="phone" value="<%=phone%>">
+                    </div>
+                    <div class="input-box">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dob">
+                    </div>
+                    <div class="input-box">
+                        <label for="dob">Gender</label>
+                        <input type="text" name="gender" value="<%=gender%>">
+                    </div>
+                    <div class="input-box">
+                        <label for="address">Address</label>
+                        <textarea name="address" cols="30" rows="3" placeholder="Enter your address"></textarea>
+                    </div>
+                </div>
+
+                <h2 class="info-head">Professional Information</h2>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="game">Game Category</label>
+                        <input type="text" placeholder="Game Category" name="gamecat">
+                    </div>
+                    <div class="input-box">
+                        <label for="from">School/College/Gym</label>
+                        <input type="text" placeholder="School/College/Gym" name="from">
+                    </div>
+                    <div class="input-box">
+                        <label for="coach">Coach</label>
+                        <select name="coach">
+                            <option value="coach1">Aniket</option>
+                            <option value="coach1">Dakshith</option>
+                            <option value="coach1">Sai Ram</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="played">Total Games Played</label>
+                        <input type="text" placeholder="Total no. of games played" name="tot_played">
+                    </div>
+                    <div class="input-box">
+                        <label for="win">Wins</label>
+                        <input type="text" placeholder="Number of games won" name="wins">
+                    </div>
+                    <div class="input-box">
+                        <label for="loss">Losses</label>
+                        <input type="text" placeholder="Number of games lost" name="lost">
+                    </div>
+                </div>
+                <div class="button">
+                    <input class="submit" type="submit" value="SUBMIT">
+                </div>
+            </form>
+            <hr>
+        </div>
+    </div>
+</body>
+
+</html>
